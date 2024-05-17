@@ -64,9 +64,7 @@ public class ExchangeServiceImplTest {
 
     @BeforeEach
     public void setup() {
-
         MockitoAnnotations.initMocks(this);
-
     }
 
     /**

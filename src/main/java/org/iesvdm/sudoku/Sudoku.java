@@ -36,7 +36,6 @@ public class Sudoku {
     }
 
     void fillBoardBasedInCluesRandomly(){
-
         board = new int[gridSize][gridSize];
         int cont = 0;
         int i = 0;
@@ -49,7 +48,6 @@ public class Sudoku {
                 cont++;
             }
         }
-
     }
 
     void fillBoardBasedInCluesRandomlySolvable() {
@@ -59,7 +57,7 @@ public class Sudoku {
                 sudoku = new Sudoku();
                 sudoku.gridSize=gridSize;
                 sudoku.copyBoard(board);
-        }while(sudoku.solveBoard());
+        } while(sudoku.solveBoard());
     }
 
     void fillBoardSolvable() {
@@ -167,6 +165,4 @@ public class Sudoku {
         }
         return true;
     }
-
 }
-
